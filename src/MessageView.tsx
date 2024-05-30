@@ -21,6 +21,7 @@ const MessageView: React.FC<MessageViewProps> = ({ message }) => {
   return (
     <div className="message-container">
       <div className="message-box">{message.content}</div>
+      <div className="message-time">{message.time.toString()}</div>
       <button onClick={copyToClipboard}>Copy Link</button>
     </div>
   );
